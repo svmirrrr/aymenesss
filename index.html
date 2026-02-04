@@ -1,0 +1,92 @@
+nihad ya sokar ana fik bifakar
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>shi haja osf 💖</title>
+
+<style>
+  body {
+    background: #EF97A5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+
+  .card {
+    background: #af3b4d;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    position: relative; 
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+
+  button {
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  #ah{
+    background: #EF97A5;
+    color: white;
+  }
+
+  #la {
+    background: #ffe5ec;
+    position: absolute;
+  }
+
+  #sticker {
+    display: none;
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  #message {
+    display: none;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #fff5f8;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h2>kanmoooooot 3lk anihad , wnti??</h2>
+
+  <button id="ah" onclick="ahClicked()">ah 💖</button>
+  <button id="la" onmouseover="movela()">la</button>
+
+  <div id="message">yaay  !!! 🥳 muaa7 elk </div>
+  <img id="sticker" src="love.gif" alt="love gif">
+</div>
+
+<script>
+function movela() {
+  const la = document.getElementById("la");
+  la.style.left = Math.random() * 80 + "%";
+  la.style.top = Math.random() * 80 + "%";
+}
+
+function ahClicked() {
+  document.getElementById("sticker").style.display = "block";
+  document.getElementById("message").style.display = "block";
+}
+</script>
+
+</body>
+</html>
